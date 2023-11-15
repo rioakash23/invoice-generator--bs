@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invoice-generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: #f8fafc;">
+<header class="w-100">
+    <div class="container-fulid cont d-flex justify-content-center">
+        <div class="main-container d-flex justify-content-start align-items-center">
+            <h1>INVOICE GENERATOR</h1>
+        </div>
+    </div>
+</header>
+<main>
+  <section id="invoice" class="mt-5 d-flex justify-content-center">
+    <div class="main-invoice d-flex justify-content-center gap-5">
+      <div class="sub-invoice rounded-5">
+        <div class="container w-100">
+          <div class="row  gap-3">
+            <div class="col-lg-12 invoice-th-box">
+              <div class="coln-box cb1">
+                <h3>INVOICE</h3>
+                <button class="log-btn p-2">Logo click to Upload</button>
+              </div>
+              <div class="coln-box d-flex justify-content-end align-items-center gap-1 cb2">
+                <div class="icon d-flex justify-content-end">
+                  <label for="" id="sunm"><i class="fa-regular fa-sun"></i></label>
+                </div>
+                 <div class="ins">
+                    <input type="checkbox" name="" id="check">
+                    <label for="check" class="check-btn"></label>
+                  </div>
+                  <div class="icon">
+                    <label for="" id="sunm"><i class="fa-regular fa-moon"></i></label>
+                  </div>
+              </div>
+             
+            </div>
+            <div class="col-lg bill-form-box">
+              <h3>Bill From</h3>
+              <form action="" class="form-inputs">
+                  <div class="invoice-input-boxes w-25 d-flex flex-column justify-content-evenly">
+                    <label for="" id="lab-txt">Company:</label>
+                    <label for="" id="lab-txt">Address:</label>
+                    <label for="" id="lab-txt">Zip:</label>
+                    <label for="" id="lab-txt">City:</label>
+                    <label for="" id="lab-txt">Country:</label>
+                  </div>
+                  <div class="invoice-input-boxes d-flex flex-column justify-content-evenly gap-2">
+                    <input type="text" name="" id="lab-inputs" placeholder="e.g. Apple Incorportion">
+                    <input type="text" name="" id="lab-inputs" placeholder="e.g. Bennington Street 22">
+                    <input type="text" name="" id="lab-inputs" placeholder="e.g. 234523">
+                    <input type="text" name="" id="lab-inputs" placeholder="e.g. Seattle">
+                    <input type="text" name="" id="lab-inputs" placeholder="e.g. USA">
+                  </div>
+              </form>
+            </div>
+            <div class="col-lg bill-form-box">
+              <h3>Bill To</h3>
+              <form action="" class="form-inputs">
+                <div class="invoice-input-boxes w-25 d-flex flex-column justify-content-evenly">
+                  <label for="" id="lab-txt">Company:</label>
+                  <label for="" id="lab-txt">Address:</label>
+                  <label for="" id="lab-txt">Zip:</label>
+                  <label for="" id="lab-txt">City:</label>
+                  <label for="" id="lab-txt">Country:</label>
+                </div>
+                <div class="invoice-input-boxes d-flex flex-column justify-content-evenly gap-2">
+                  <input type="text" name="" id="lab-inputs" placeholder="e.g. Apple Incorportion">
+                  <input type="text" name="" id="lab-inputs" placeholder="e.g. Bennington Street 22">
+                  <input type="text" name="" id="lab-inputs" placeholder="e.g. 234523">
+                  <input type="text" name="" id="lab-inputs" placeholder="e.g. Seattle">
+                  <input type="text" name="" id="lab-inputs" placeholder="e.g. USA">
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-12 custom-field-box">
+              <h3>Custom fields<span>Add custom field</span></h3>
+            </div>
+            <div class="col-lg-6 col-md-12 did">
+              <form action="" class="form-inputs">
+                <div class="invoice-input-boxes w-25 d-flex flex-column justify-content-evenly">
+                  <label for="" id="lab-txt">Invoice Number:</label>
+                  <label for="" id="lab-txt">Issued Date:</label>
+                  <label for="" id="lab-txt">Due Date:</label>
+                </div>
+                <div class="invoice-input-boxes d-flex flex-column justify-content-evenly gap-2">
+                  <input type="text" name="" id="lab-inputs" placeholder="Invoice number">
+                  <input type="date" name="" id="lab-inputs">
+                  <input type="date" name="" id="lab-inputs">
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-12 ">
+              <div class="row item-box">
+                <div class="col-6  none-box">Item Name</div>
+                <div class="col-2  none-box">Qty</div>
+                <div class="col-2 none-box">Rate</div>
+                <div class="col-2 none-box">Line Total</div>
+                <div class="col-lg-6">
+                  <input type="text" name="" id="lab-inputs" placeholder="Item name">
+                </div>
+                <div class="col-lg-2">
+                  <input type="text" name="" id="lab-inputs" placeholder="Qty">
+                </div>
+                <div class="col-lg-2">
+                  <input type="text" name="" id="lab-inputs" placeholder="Rate">
+                </div>
+                <div class="col-lg-2">
+                  <input type="text" name="" id="lab-inputs" placeholder="Total">
+                </div>
+                <div class="col-lg-6 mt-3 ">
+                  <textarea class="pt-2" name="" id="lab-inputs" cols="30" rows="10" placeholder="Feed Back"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg note-term-box">
+              <h3>Notes</h3>
+              <input type="text" name="" id="lab-inputs">
+              <h3>Terms</h3>
+              <input type="text" name="" id="lab-inputs">
+            </div>
+            <div class="col-lg">
+              <div class="row">
+                <div class="col-12 switch-btns">
+                  <div class="form-check form-switch ">
+                    <input class="form-check-input btn-lg" type="checkbox" id="flexSwitchCheckDefault-0">
+                   
+                  </div>
+                  <div class="form-check form-switch ">
+                    <input class="form-check-input btn-lg" type="checkbox" id="flexSwitchCheckDefault-1">
+                  
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input btn-lg" type="checkbox" id="flexSwitchCheckDefault-2">
+                    
+                  </div>
+                </div>
+                <div class="col-12 ls mt-1">
+                  <label class="form-check-label" for="flexSwitchCheckDefault-0">Discount</label>
+                  <label class="form-check-label tax" for="flexSwitchCheckDefault-1">Tax</label>
+                  <label class="form-check-label ship" for="flexSwitchCheckDefault-2">Shipping</label>
+                </div>
+                <div class="col-12 mt-3  ship-boxes">
+                  <div class="st-boxes">
+                    <h3>Sub Total</h3>
+                  </div>
+                  <div class="st-boxes">
+                    <h3 style="font-size: 1.50rem; opacity: 1; font-weight: 600;">EUR10.00</h3>
+                  </div>
+                </div>
+                <div class="col-12 mt-2  ship-boxes">
+                  <div class="st-boxes d-flex align-items-center">
+                    <h3 style="font-size: 1rem;">Shipping</h3>
+                  </div>
+                  <div class="st-boxes">
+                    <input type="text" name="" id="lab-inputs" placeholder="EUR">
+                  </div>
+                </div>
+                <div class="col-12  ship-boxes mt-3 bor">
+                  <div class="st-boxes mt-3">
+                    <h3 style="font-size: 1.20rem; opacity: 0.9; font-weight: 450;">Total Amount</h3>
+                  </div>
+                  <div class="st-boxes mt-3">
+                    <h3 style="font-size: 1.30rem; opacity: 1; font-weight: 500;">EUR10</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-invoice rounded-5  si2">
+        <div class="container mt-3">
+          <div class="row gap-2">
+            <div class="col-12  d-flex justify-content-center align-items-center">
+              <button class="btns-group text-dark btn-light"><i class="fa-solid fa-plus p-2"></i>New Invoice</button>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <button class="btns-group text-light" style="background-color: #ea580cff;"><i class="fa-solid fa-folder p-2"></i>Save Invoice</button>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <button class="btns-group btn-primary" style="background-color: #312e81ff;"><i class="fa-solid fa-file-pdf p-2"></i>Generate PDF Invoice</button>
+            </div>
+            <div class="col d-flex justify-content-center gap-2">
+              <button class="btns-group text-light" style="background-color: #312e81ff;">Export</button>
+              <button class="btns-group text-light" style="background-color: #312e81ff;">Import</button>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <button class="btns-group btn-light text-dark" style="border: 1px solid rgb(184, 184, 184);"><span class="p-2">.</span>Missing a feature ?</button>
+            </div>
+            <div class="col-12 mt-3 cur">
+              <h4 style="color: black;">Currency</h4>
+              <select name="list" id="euro" class="pl-2">
+                  <option value="DKK">DKK-Danish Krone</option>
+                  <option value="DOP">Dominican Peso</option>
+                  <option value="Dzd">Algerian Dinar</option>
+                  <option value="EGP">Egyptian Pound</option>
+                </select>
+            </div>
+            <div class="col-12 mt-2 pb-3 cur cur2">
+              <h4 style="color: black;" class="mt-3">Saved Invoices</h4>
+              <button class="si-btn">No Saved Invoice Found.</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="aboutpara" >
+    <div class="main-para  d-flex justify-content-center">
+      <div class="para-content p-3">
+        <p class="parac">You want to run your business running smoothly, right? Then you must keep your bills updated. A free invoice generator can be helpful in this situation.</p>
+        <p class="parac mt-3 pt-3">This invoice generator is free and privacy-based. Here are the features offered to you:</p>
+        <ul class="para-links">
+          <li>Define Sender and Recipient:</li>
+          <p>The invoice generator allows users to input their information as the sender and recipient effortlessly. All crucial fields are included: Name, Address, City, and Country. If you need additional information like VAT number, email, etc., you can use custom fields for this.</p>
+          <li>Invoice Date and Due Date</li>
+          <p >Users can set the invoice and due dates, ensuring clarity and timeliness in payment expectations. This function helps with better money management and makes it less likely that payments will be late (hopefully :).</p>
+          <li>Local Storage and Privacy</li>
+          <p >Data privacy is paramount, and this invoice generator addresses this concern by saving the data in local storage. Users can confidently create and manage invoices, knowing their information is kept secure.</p>
+          <li>PDF Invoice Generation</li>
+          <p >The tool offers the ability to generate professional-looking PDF invoices. I'm currently working on additional templates for PDFs with different layouts.</p>
+          <li>Import and Export Support</li>
+          <p >The tool supports importing and exporting invoices in a simple text file format, making it convenient to transfer invoice data across platforms or keep backups of essential records.</p>
+          <li>Custom Fields and Notes</li>
+          <p >Users can include custom fields like VAT, bank information, and other relevant details. Additionally, fields for notes and terms allow for clear communication and additional information in the invoice.</p>
+          <li>Discounts, Taxes, and Shipping Prices</li>
+          <p >This invoice generator offers a complete invoicing solution by supporting shipping costs, taxes, and discounts. Both percentage and amount are supported.</p>
+          <li>Local Save and Load Functionality</li>
+          <p >By enabling users to save and load their invoices locally, the solution improves accessibility and gradually makes effective invoice administration easier.</p>
+          <li>Multi-Currency Support</li>
+           <p >I included all world currencies to ensure that users from all over the world can utilize the tool. Now it's a flexible and universally applicable billing solution.</p>
+      </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <section id="invoice-footer" class="mt-5">
+    <div class="main-footer d-flex justify-content-center w-100">
+     
+          <div class="col-right w-100 ft-h d-flex align-items-center ">
+            <h1>Invoice Generator<span>|</span><span class="ml-2" style="opacity: 0.7;"><i class="fa-regular fa-copyright"></i> 2023 by csaba Kissi</span></h1>
+          </div>
+          <div class="col-links w-100 d-flex justify-content-center align-items-center">
+            <ul class="soci-footer w-50 d-flex align-items-center">
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+              <li><a href=""><i class="fa-solid fa-globe"></i></a></li>
+          </ul>
+        </div>
+    </div>
+  </section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+</body>
+</html>

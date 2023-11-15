@@ -1,0 +1,354 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Figtree,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+:root{
+    --bg-primary-color:rgb(246, 244, 244);
+    --font-family: Figtree,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+
+}
+header{
+    height: 60px;
+    background-color:#ffffff;
+}
+.cont{
+    height: 60px;
+}
+.main-container{
+    width: 90%;
+}
+.main-container h1{
+    font-size:1.50rem;
+    font-family: var(--font-family);
+}
+.main-invoice{
+    width: 85%;
+    height: auto;
+
+}
+.sub-invoice{
+    width: 100%;
+    height: auto;
+
+    background-color:#ffffff;
+}
+.si2{
+    width: 50%;
+}
+.invoice-th-box{
+    display: flex;
+}
+.coln-box{
+    width: 100%;
+    
+}
+.coln-box h3{
+    font-size: 1.50rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+}
+.ins{
+
+    width: 20%;
+    height: auto;
+   
+   
+}
+.icon{
+    width: 26%;
+    height: auto;
+
+    
+}
+.mn{
+    margin-right: 3px;
+}
+.check-btn{
+    background-color:#d2d2d2;
+    width: 80px;
+    height: 40px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+.check-btn:before{
+    position: absolute;
+    content: '';
+    left: 6%;
+    top: 7%;
+    background-color: white;
+    width: 90%;
+    height: 32px;
+    border-radius: 100px;
+    max-width: 30px;
+    transition: 0.2s;
+}
+input:checked + .check-btn{
+    background-color: blue;
+}
+input:checked + .check-btn::before{
+    transform: translateX(42px);
+}
+#check{
+    display: none;
+}
+#sunm i{
+  font-size: 2rem;
+}
+.log-btn{
+    width: 50%;
+    height: 70px;
+    font-size: 1.28rem;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    background-color: #a5aab1ff;
+    cursor: pointer;
+
+}
+.bill-form-box h3{
+    font-size: 1.10rem;
+    font-weight: 500;
+    font-family: var(--font-family);
+}
+.form-inputs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.invoice-input-boxes{
+    width: 100%;
+    height: 300px;
+    
+}
+#lab-txt{
+    color: black;
+    opacity: 0.8;
+}
+#lab-inputs{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 2%;
+    background-color: #eeefef;
+}
+#lab-inputs:hover{
+    border: 3px solid blue;
+}
+.custom-field-box h3{
+    font-family: var(--font-family);
+    font-size: 1.40rem;
+    color: black;
+    font-weight: 500;
+}
+.custom-field-box span{
+    font-size: 1.20rem;
+    padding-left: 1%;
+    opacity: 0.7;
+    text-decoration: underline;
+}
+.btns-group{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    font-family: var(--font-family);
+    font-size: 1.30rem;
+}
+.cur2{
+    border-top: 1px solid rgb(186, 183, 183);
+}
+.cur h4{
+    font-family: var(--font-family);
+    font-size: 1.20rem;
+    opacity: 0.7;
+}
+#euro{
+    width: 100%;
+    height: 50px;
+    background-color:#eeef;
+    border: none;
+    border-radius: 10px;
+}
+.si-btn{
+    width: 100%;
+    height: 50px;
+    background-color:rgb(247, 244, 244);
+    border: none;
+    border-radius: 5px;
+    
+}
+#aboutpara{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.main-para{
+    width: 85%;
+    height: auto;
+    background-color:#ffffff;
+    border-radius: 20px;
+}
+.para-content{
+    width: 48vw;
+    height: auto;
+
+}
+.parac{
+    font-size: 1.10rem;
+    font-family: var(--font-family);
+    line-height: 1.1;
+    font-weight: 450;
+    width: 60vw;
+}
+.para-links li{
+  font-size:1.10rem;
+  font-weight: 500;
+  font-family: var(--font-family);
+}
+.para-links p{
+    font-family: var(--font-family);
+}
+.main-footer{
+    height: auto;
+    background-color:#ffffff;
+}
+
+.soci-footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.soci-footer li{
+    list-style-type: none;
+}
+.soci-footer li i{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.7;
+}
+.col-links{
+    height: auto;
+}
+.col-right h1{
+    font-size: 1.30rem;
+    margin-left: 2%;
+}
+.note-term-box h3{
+    font-size: 1.20rem;
+    font-family: 500;
+    opacity: 0.8;
+    font-family: var(--font-family);
+}
+.switch-btns{
+    width: 100%;
+    height: auto;
+ 
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.ls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.tax{
+    margin-right: 10px;
+}
+.ship{
+    margin-right: 27px;
+}
+.ship-boxes{
+    display: flex;
+}
+.st-boxes{
+    width: 100%;
+
+    height: auto;
+}
+.st-boxes h3{
+    font-size: 1.20rem;
+    font-weight: 450;
+    opacity: 0.7;
+    font-family: var(--font-family);
+}
+.bor{
+    border-top: 1px solid rgb(196, 195, 195);
+}
+
+@media(max-width:992px){
+    .main-invoice{
+        flex-wrap: wrap;
+    }
+    .si2{
+        width: 100%;
+    }
+    .main-para{
+        width: 90%;
+        height: auto;
+        background-color:#ffffff;
+        border-radius: 20px;
+    }
+    .log-btn{
+        width: 70%;
+        height: auto;
+        font-size: 1.28rem;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        background-color: #a5aab1ff;
+        cursor: pointer;
+    
+    }
+    .cb2{
+        visibility: hidden;
+    }
+    .para-content{
+        width: 70vw;
+        height: auto;
+    
+    }
+    .col-right h1{
+        text-align: center;
+        font-size: 1.30rem;
+        margin-left: 2%;
+    }
+    .main-footer{
+       flex-wrap: wrap;
+    }
+    .col-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-links{
+        display: flex;
+        justify-content: center;
+    }
+    .soci-footer{
+        height: auto;
+    }
+    .none-box{
+        display: none;
+    }
+    .item-box{
+        gap: 10px;
+    }
+    .did{
+        width: 100%;
+    }
+}
